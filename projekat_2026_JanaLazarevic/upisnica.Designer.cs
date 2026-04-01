@@ -1,6 +1,6 @@
 ﻿namespace projekat_2026_JanaLazarevic
 {
-    partial class Glavna
+    partial class upisnica
     {
         /// <summary>
         /// Required designer variable.
@@ -30,18 +30,28 @@
         {
             this.SuspendLayout();
             // 
-            // Glavna
+            // upisnica
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "Glavna";
-            this.Text = "Glavna";
-            this.Load += new System.EventHandler(this.Glavna_Load);
+            this.ClientSize = new System.Drawing.Size(890, 493);
+            this.Name = "upisnica";
+            this.Load += new System.EventHandler(this.upisnica_Load_1);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox txt_upisnica;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
