@@ -16,5 +16,10 @@ namespace projekat_2026_JanaLazarevic
         {
             InitializeComponent();
         }
+
+        private void Signup_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
