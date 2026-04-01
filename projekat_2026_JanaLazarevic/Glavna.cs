@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace projekat_2026_JanaLazarevic
 {
-    public partial class Login : Form
+    public partial class Glavna : Form
     {
-        public Login()
+        public Glavna()
         {
             InitializeComponent();
-        }
-
-        private void Login_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

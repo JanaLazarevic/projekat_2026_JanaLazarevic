@@ -36,29 +36,33 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 3);
+            this.dataGridView1.Location = new System.Drawing.Point(9, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(768, 275);
+            this.dataGridView1.Size = new System.Drawing.Size(576, 223);
             this.dataGridView1.TabIndex = 0;
             // 
             // btn_ok
             // 
-            this.btn_ok.Location = new System.Drawing.Point(334, 331);
+            this.btn_ok.Location = new System.Drawing.Point(250, 269);
+            this.btn_ok.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_ok.Name = "btn_ok";
-            this.btn_ok.Size = new System.Drawing.Size(75, 23);
+            this.btn_ok.Size = new System.Drawing.Size(56, 19);
             this.btn_ok.TabIndex = 1;
             this.btn_ok.Text = "OK";
             this.btn_ok.UseVisualStyleBackColor = true;
+            this.btn_ok.Click += new System.EventHandler(this.btn_ok_Click);
             // 
             // sifarnik
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.btn_ok);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "sifarnik";
             this.Text = "sifarnik";
             this.Load += new System.EventHandler(this.sifarnik_Load);

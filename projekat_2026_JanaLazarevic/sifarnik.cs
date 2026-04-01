@@ -30,5 +30,22 @@ namespace projekat_2026_JanaLazarevic
             dataGridView1.DataSource = tabela;
             dataGridView1.Columns["id"].ReadOnly = true;
         }
+
+        private void btn_ok_Click(object sender, EventArgs e)
+        {
+            DataTable menjano = tabela.GetChanges();
+            // DataRowState.Modified = promenjeni
+            // DataRowState.Added    = dodati
+            // DataRowState.Deleted  = obrisani
+            // DataRowState.Unchanged= nepromenjeni
+            Adapter.UpdateCommand = new SqlCommandBuilder(Adapter).GetUpdateCommand();
+            if (menjano != null)
+            {
+                Adapter.Update(menjano);
+                this.Close();
+            }
+            else
+                this.Close();
+        }
     }
 }
