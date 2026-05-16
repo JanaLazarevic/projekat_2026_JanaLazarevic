@@ -32,7 +32,7 @@ namespace projekat_2026_JanaLazarevic
             {
                 SqlConnection veza = Konekcija.Connect();
 
-                string provera = "SELECT COUNT(*) FROM Korisnik WHERE email = @email";
+                string provera = "SELECT COUNT(*) FROM Korisnik WHERE korisnik_email = @email";
                 SqlCommand komanda = new SqlCommand(provera, veza);
                 komanda.Parameters.AddWithValue("@email", textBox3.Text);
 
@@ -46,10 +46,10 @@ namespace projekat_2026_JanaLazarevic
                 }
                 else
                 {
-                    string naredba = "INSERT INTO Korisnik (ime, lozinka, email) VALUES (@ime, @lozinka, @email)";
+                    string naredba = "INSERT INTO Korisnik (koirsnik_email, korisnik_loz) VALUES ( @email, @lozinka)";
                     SqlCommand uradi = new SqlCommand(naredba, veza);
 
-                    uradi.Parameters.AddWithValue("@ime", textBox1.Text);
+                    
                     uradi.Parameters.AddWithValue("@lozinka", textBox4.Text);
                     uradi.Parameters.AddWithValue("@email", textBox3.Text);
 

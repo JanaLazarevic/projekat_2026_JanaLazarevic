@@ -40,7 +40,7 @@ namespace projekat_2026_JanaLazarevic
                
                 SqlConnection veza = Konekcija.Connect();
                 DataTable podaci = new DataTable();
-                SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM korisnik WHERE ime =" + "'" + txtIme.Text + "'", veza);
+                SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM korisnik WHERE korisnik_email =" + "'" + txtIme.Text + "'", veza);
                 adapter.Fill(podaci);
                 int count = podaci.Rows.Count;
                 if (count == 0)
@@ -51,7 +51,7 @@ namespace projekat_2026_JanaLazarevic
                 {
                    
 
-                    if (podaci.Rows[0]["pass"].ToString() == txtSifra.Text)
+                    if (podaci.Rows[0]["korisnik_loz"].ToString() == txtSifra.Text)
                     {
                         MessageBox.Show("Uspesno ste se ulogovali!!!!");
                         this.Hide();
