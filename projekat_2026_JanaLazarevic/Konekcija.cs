@@ -15,7 +15,7 @@ namespace projekat_2026_JanaLazarevic
             string CS;
             CS = ConfigurationManager.ConnectionStrings["skola"].ConnectionString;
             return new SqlConnection(CS);
-            return null;
+           
         }
     }
 }

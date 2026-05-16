@@ -7,6 +7,7 @@ namespace projekat_2026_JanaLazarevic
 {
     internal static class Program
     {
+        static public string user;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
